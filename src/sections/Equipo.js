@@ -127,34 +127,6 @@ const Project = ({
 
       <ImageContainer>
         <ProjectImage src={logo.image.src} alt={logo.title} />
-        <ProjectTag>
-          <Flex
-            style={{
-              float: 'right',
-            }}
-          >
-            <Box mx={1} fontSize={5}>
-              <SocialLink
-                name="Check repository"
-                fontAwesomeIcon="github"
-                url={repositoryUrl}
-              />
-            </Box>
-            <Box mx={1} fontSize={5}>
-              <SocialLink
-                name="See project"
-                fontAwesomeIcon="globe"
-                url={projectUrl}
-              />
-            </Box>
-          </Flex>
-          <ImageSubtitle bg="primary" color="white" y="bottom" x="right" round>
-            {type}
-          </ImageSubtitle>
-          <Hide query={MEDIA_QUERY_SMALL}>
-            <ImageSubtitle bg="backgroundDark">{publishedDate}</ImageSubtitle>
-          </Hide>
-        </ProjectTag>
       </ImageContainer>
     </Flex>
   </Card>
@@ -177,7 +149,7 @@ Project.propTypes = {
 
 const Projects = () => (
   <Section.Container id="projects" Background={Background}>
-    <Section.Header name="Projects" icon="💻" label="notebook" />
+    <Section.Header name="Equipo" icon="💻" label="notebook" />
     <StaticQuery
       query={graphql`
         query ProjectsQuery {
