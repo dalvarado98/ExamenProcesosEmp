@@ -43,7 +43,7 @@ module.exports = client.getEntries().then(entries => {
   plugins.push({
     resolve: 'gatsby-source-medium',
     options: {
-      username: mediumUser || '@medium',
+      username: mediumUser || '@dalvaradog',
     },
   });
 

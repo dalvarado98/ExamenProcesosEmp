@@ -59,20 +59,11 @@ const Header = () => (
                 }}
               />
             );
-            const navLinks = links.map(({ name, value }) => (
-              <RouteLink
-                key={name}
-                onClick={value.onClick}
-                selected={value.selected}
-              >
-                {name}
-              </RouteLink>
-            ));
 
             return (
               <Fragment>
                 {homeLink}
-                <Flex mr={[0, 3, 5]}>{navLinks}</Flex>
+                <Flex mr={[0, 3, 5]}></Flex>
               </Fragment>
             );
           }}
