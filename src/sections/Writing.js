@@ -141,7 +141,7 @@ const Writing = () => (
             isMediumUserDefined
           }
         }
-        allMediumPost(limit: 7, sort: { fields: createdAt, order: DESC }) {
+        allMediumPost(limit: 10, sort: { fields: createdAt, order: DESC }) {
           totalCount
           edges {
             node {
@@ -183,7 +183,7 @@ const Writing = () => (
       return (
         isMediumUserDefined && (
           <Section.Container id="writing" Background={Background}>
-            <Section.Header name="Writing" icon="✍️" label="writing" />
+            <Section.Header name="Materia del curso" icon="✍️" label="writing" />
             <CardContainer minWidth="300px">
               {posts.map(({ Component, ...rest }) => (
                 <Fade bottom key={rest.id}>
